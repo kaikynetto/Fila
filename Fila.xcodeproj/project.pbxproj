@@ -140,6 +140,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fila/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Fila;
 				INFOPLIST_KEY_CFBundleIconFile = FilaIcon;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
@@ -160,6 +161,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Fila/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Fila;
 				INFOPLIST_KEY_CFBundleIconFile = FilaIcon;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
