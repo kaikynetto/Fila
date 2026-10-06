@@ -1,0 +1,11 @@
+.build/
+build/
+xcuserdata/
+.DS_Store
+node_modules/
+Web/dist/
+Web/.npm-cache/
+Fila/Web/
+.release/
+test-results/
+playwright-report/

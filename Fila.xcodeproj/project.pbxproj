@@ -1,0 +1,176 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+		A10000000000000000000001 = {
+			isa = PBXBuildFile;
+			fileRef = A10000000000000000000002;
+		};
+		A10000000000000000000012 = {
+			isa = PBXBuildFile;
+			fileRef = A10000000000000000000013;
+		};
+		A10000000000000000000013 = {
+			isa = PBXFileReference;
+			lastKnownFileType = folder;
+			path = Web;
+			sourceTree = "<group>";
+		};
+		A30000000000000000000001 = { isa = PBXFileReference; lastKnownFileType = image.icns; path = FilaIcon.icns; sourceTree = "<group>"; };
+		A30000000000000000000002 = { isa = PBXBuildFile; fileRef = A30000000000000000000001; };
+		A20000000000000000000001 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		A20000000000000000000002 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeBridge.swift; sourceTree = "<group>"; };
+		A20000000000000000000003 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		A20000000000000000000004 = { isa = PBXBuildFile; fileRef = A20000000000000000000001; };
+		A20000000000000000000005 = { isa = PBXBuildFile; fileRef = A20000000000000000000002; };
+		A20000000000000000000006 = { isa = PBXBuildFile; fileRef = A20000000000000000000003; };
+		A10000000000000000000002 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = FilaApp.swift;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000003 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			path = Fila.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A10000000000000000000004 = {
+			isa = PBXGroup;
+			children = (A10000000000000000000005, A10000000000000000000006);
+			sourceTree = "<group>";
+		};
+		A10000000000000000000005 = {
+			isa = PBXGroup;
+			children = (A30000000000000000000001, A10000000000000000000002, A10000000000000000000013, A20000000000000000000001, A20000000000000000000002, A20000000000000000000003);
+			path = Fila;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000006 = {
+			isa = PBXGroup;
+			children = (A10000000000000000000003);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A10000000000000000000007 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (A10000000000000000000001, A20000000000000000000004, A20000000000000000000005, A20000000000000000000006);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10000000000000000000008 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A10000000000000000000009 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (A10000000000000000000012, A30000000000000000000002);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1000000000000000000000A = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1000000000000000000000D;
+			buildPhases = (A10000000000000000000007, A10000000000000000000008, A10000000000000000000009);
+			buildRules = ();
+			dependencies = ();
+			name = Fila;
+			productName = Fila;
+			productReference = A10000000000000000000003;
+			productType = "com.apple.product-type.application";
+		};
+		A1000000000000000000000B = {
+			isa = PBXProject;
+			attributes = { LastSwiftUpdateCheck = 1600; LastUpgradeCheck = 1600; };
+			buildConfigurationList = A1000000000000000000000C;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = A10000000000000000000004;
+			productRefGroup = A10000000000000000000006;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (A1000000000000000000000A);
+		};
+		A1000000000000000000000C = {
+			isa = XCConfigurationList;
+			buildConfigurations = (A1000000000000000000000E, A1000000000000000000000F);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1000000000000000000000D = {
+			isa = XCConfigurationList;
+			buildConfigurations = (A10000000000000000000010, A10000000000000000000011);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1000000000000000000000E = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1000000000000000000000F = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A10000000000000000000010 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Fila/Fila.entitlements;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build";
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Fila;
+				INFOPLIST_KEY_CFBundleIconFile = FilaIcon;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.local.Fila;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A10000000000000000000011 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Fila/Fila.entitlements;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/build";
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Fila;
+				INFOPLIST_KEY_CFBundleIconFile = FilaIcon;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.local.Fila;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+	};
+	rootObject = A1000000000000000000000B;
+}
