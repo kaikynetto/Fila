@@ -219,7 +219,13 @@ svg {
   border-radius: 6px;
   font-family: var(--serif);
   font-size: 23px;
+  line-height: 1;
+  flex-shrink: 0;
   color: #c9bba9;
+}
+.workspace-avatar > span {
+  display: block;
+  transform: translateY(-0.08em);
 }
 .workspace-switch strong {
   display: block;

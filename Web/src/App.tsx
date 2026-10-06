@@ -394,7 +394,7 @@ export default function App() {
             onClick={() => setSection("Preferências")}
           >
             <div className="workspace-avatar">
-              {profile.companyName[0].toUpperCase()}
+              <span>{profile.companyName[0].toUpperCase()}</span>
             </div>
             <div>
               <strong>{profile.companyName}</strong>
