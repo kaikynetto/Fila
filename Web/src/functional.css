@@ -859,3 +859,41 @@
     font-size: 28px;
   }
 }
+
+/* Keep text-field focus inside the existing border, without a detached ring. */
+.onboarding-basics input,
+.onboarding-handle input,
+.settings-fields input,
+.account-editor-fields input,
+.creation-label-input input,
+.creation-stage textarea {
+  outline: none;
+  transition: border-color 120ms, background-color 120ms;
+}
+.onboarding-basics input:hover:not(:focus),
+.onboarding-handle input:hover:not(:focus),
+.settings-fields input:hover:not(:focus),
+.account-editor-fields input:hover:not(:focus),
+.creation-label-input input:hover:not(:focus),
+.creation-stage textarea:hover:not(:focus) {
+  border-color: #63584c;
+}
+.onboarding-basics input:focus,
+.onboarding-handle input:focus,
+.settings-fields input:focus,
+.account-editor-fields input:focus,
+.creation-label-input input:focus,
+.creation-stage textarea:focus {
+  outline: none;
+  border-color: #72859b;
+  background-color: #1b1815;
+  box-shadow: none;
+}
+.creation-time-field:focus-within {
+  outline: none;
+  border-color: #72859b;
+  background-color: #1b1815;
+}
+.agenda-search:focus-within {
+  border-color: #72859b;
+}
